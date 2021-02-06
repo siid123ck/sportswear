@@ -5,9 +5,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.6rem;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+html{
+  font-size: 62.5%;
+ 
+}
+@media only screen and (max-width:1000px){
+  html{
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width:900px){
+  html{
+    font-size: 37.5%;
+  }
+}
+
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
 }
