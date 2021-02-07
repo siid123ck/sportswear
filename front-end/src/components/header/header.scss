@@ -6,7 +6,10 @@
     height: 8rem;
     padding:0 4rem;
     // width: 100%;
- 
+    @media only screen and(max-width:750px){
+        flex-wrap: wrap;
+     height: 15rem;
+       }
    
 }
 
@@ -17,6 +20,16 @@
 }
 
 .nav{
+    @media only screen and(max-width:750px){
+     flex-wrap: wrap;
+      flex: 0 0 100%;
+      order: 1;
+     
+    }
+    @media only screen and(max-width:570px){
+      display: none;
+      visibility: hidden;
+       }
     &-list{
         display: flex;
         grid-column: 2/span 3;
@@ -40,6 +53,7 @@
 
 //cart icon
 .cart-icon{
+    margin-left: auto;
     position: relative;
     cursor: pointer;
     &-bag{
@@ -84,3 +98,4 @@
         transform: translateY(50%);
     }
 }
+

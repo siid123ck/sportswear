@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {ReactComponent as BagIcon} from  "../../assets/shopping-bag.svg";
 import './header.scss';
 
@@ -13,27 +14,29 @@ export default function Header() {
                    <ion-icon  className="search-icon" name="search-outline"></ion-icon>
                   </div>
                     <div className="nav-item">
-                        <a href="">home</a>
+                        <Link to="">home</Link>
+                    </div>
+                    
+                    <div className="nav-item">
+                        <Link to="">shop</Link>
                     </div>
                     <div className="nav-item">
-                        <a href="">shop</a>
+                        <Link to="">men</Link>
                     </div>
                     <div className="nav-item">
-                        <a href="">men</a>
-                    </div>
-                    <div className="nav-item">
-                        <a href="">women</a>
+                        <Link to="">women</Link>
                     </div>
                 
                     <div className="nav-item">
-                        <a href="">register</a>
+                        <Link to="">register</Link>
                     </div>
-                    <div className="nav-item cart-icon">
-                      <BagIcon className="cart-icon-bag"/>
-                      <span className="cart-icon-count">0</span>
-                    </div>
+                   
                 </ul>
             </div>
+            <div className=" cart-icon">
+                      <BagIcon className="cart-icon-bag"/>
+                      <span className="cart-icon-count">0</span>
+           </div>
         </div>
     )
 }

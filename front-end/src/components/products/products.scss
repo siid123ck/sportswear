@@ -1,0 +1,39 @@
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2rem;
+    padding: 4rem;
+}
+
+.product{
+    background-color: rgba(0, 0, 255, 0.185);
+    text-transform: capitalize;
+   border: 1px solid lightgrey;
+    & img{
+        width: 100%;
+        height: 41rem;
+    }
+
+    &-body{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
+    &-details{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+    }
+    &-reviews{
+        display: flex;
+        justify-content: space-between;
+    }
+    & ion-icon{
+        font-size: 1.3rem;
+       color: blueviolet;
+       margin: 2px;
+      
+    }
+}
+
+//icons
