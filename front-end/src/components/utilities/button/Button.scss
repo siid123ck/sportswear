@@ -1,0 +1,17 @@
+.btn{
+    color: white;
+    background-color: black;
+    padding: .8rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    &:disabled{
+       cursor: not-allowed;
+    }
+    &:focus{
+        outline: none;
+    }
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.879);
+        transform: translateY(1px) scale(1.01);
+    }
+}
